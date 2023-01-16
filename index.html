@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LuxCars.com/Logowanie</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Amiri&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<a href="home.html" class="logo">LuxCars</a>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="samochody.html">Samochody</a></li>
+			<li><a href="wsp.html">Współpraca</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+		<a href="index.html"><button class="bn632-hover bn20" id="p1">Zaloguj się</button></a>
+		<a href="indexrej.html"><button class="bn632-hover bn20">Zarejestruj się</button></a>
+	</header>
+	<section class="banner"></section>
+	<div class="container">
+		<h1 class="label">Zaloguj się</h1>
+		<form class="login_form" action="homelog.html" method="post" name="form" onsubmit="return validated()">
+			<div class="font">E-mail lub numer telefunu</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Wpisz poprawnie E-mail lub numer telefonu</div>
+			<div class="font font2">Hasło</div>
+			<input type="password" name="password">
+			<div id="pass_error">Wpisz poprawne hasło</div>
+			<button type="submit">Zaloguj</button>
+			<p id="nmk">Nie masz jeszcze konta?</p>
+		</form>
+		<a href="indexrej.html"><button id="btn2">Zarejestruj się</button></a>
+	</div>	
+	<footer>
+        <div class="footer-content">
+            <h3>LuxCars</h3>
+            <p>Sprawdź nasze social media</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 . designed by <span>Hubert Bolałek</span></p>
+        </div>
+    </footer>
+	<script src="valid.js"></script>
+	
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY > 0);
+		})
+	</script>
+</body>
+</html>

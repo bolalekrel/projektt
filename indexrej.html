@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LuxCars.com/rejestracja</title>
+	<link rel="stylesheet" href="style2.css">
+	<link href='http://fonts.googleapis.com/css?family=Amiri&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<a href="home.html" class="logo">LuxCars</a>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="samochody.html">Samochody</a></li>
+			<li><a href="wsp.html">Współpraca</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+		<a href="index.html"><button class="bn632-hover bn20" id="p1">Zaloguj się</button></a>
+		<a href="indexrej.html"><button class="bn632-hover bn20">Zarejestruj się</button></a>
+	</header>
+	<section class="banner"></section>
+	<div class="center">
+	<div class="btns">
+	<p id="reje">Rejestracja</p>		
+	</div>
+	<div class="signup-form">
+	<div class="header">Zarejestruj się za darmo</div>
+	<div class="signup_error"></div>
+	<form action="potw.html" name="signupForm" method="post" onsubmit="return signupValid()">
+	<input type="text" name="Imię" placeholder="Imię" autocomplete="off">
+	<input class="lstname" name="lastname" type="text" placeholder="Nazwisko" autocomplete="off">	
+	<input class="email" name="email" type="text" placeholder="Email lub numer telefonu" autocomplete="off">	
+	<input class="email" name="password" type="password" placeholder="Hasło" autocomplete="off">
+	<input type="submit" value="Zarejestruj">
+	</form>
+	<p id="mjk">Masz już konto?</p>
+	<a href="index.html"><button id="btn2">Zaloguj się</button></a>
+	</div>
+	</div>
+	<footer>
+        <div class="footer-content">
+            <h3>LuxCars</h3>
+            <p>Sprawdź nasze social media</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 . designed by <span>Hubert Bolałek</span></p>
+        </div>
+    </footer>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY > 0);
+		})
+	</script>
+	<script src="script.js"></script>
+	<script src="valid2.js"></script>
+</body>
+</html>

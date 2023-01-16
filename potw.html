@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LuxCars.com/potwierdzenie-konta</title>
+	<link rel="stylesheet" href="style3.css">
+	<script src="gra.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<a href="home.html" class="logo">LuxCars</a>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="samochody.html">Samochody</a></li>
+			<li><a href="wsp.html">Współpraca</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+		<a href="index.html"><button class="bn632-hover bn20" id="p1">Zaloguj się</button></a>
+		<a href="indexrej.html"><button class="bn632-hover bn20">Zarejestruj się</button></a>
+	</header>
+	<div class="paper">
+		<div class="lines">
+		  <div class="text" contenteditable spellcheck="false">
+			Aktywacja konta<br /><br />
+		   Aby aktywować konto potwierdź Email, który do Ciebie wysłaliśmy a następnie zaloguj się. Jeśli chcesz pograj w grę obok :)</div>
+		</div>
+		<div class="holes hole-top"></div>
+		<div class="holes hole-middle"></div>
+		<div class="holes hole-bottom"></div>
+	  </div>
+	<div class="container">
+		<a href="index.html"><button id="btn2">Zaloguj się</button></a>
+	</div>
+	<div>
+	   <div class="wave"></div>
+	   <div class="wave"></div>
+	   <div class="wave"></div>
+	</div>
+	<div class="ctn">
+		<canvas id="c" width="360px" height="640px"></canvas>
+		<div id="scoreboard">0</div>
+		<div id="start-screen">
+		  <div id="ctrl-ctn">
+			<div id="up" class="ctrl-btn">↑</div>
+			<div id="space" class="ctrl-btn">SPACE</div>
+			<div id="tap" class="ctrl-btn">TAP</div>
+		  </div>
+		</div>
+		<div id="gameover-screen">
+		  <div id="gameover">GAME OVER</div>
+		  <div id="replay">REPLAY</div>
+		</div>
+	  </div>
+	  <footer>
+        <div class="footer-content">
+            <h3>LuxCars</h3>
+            <p>Sprawdź nasze social media</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 . designed by <span>Hubert Bolałek</span></p>
+        </div>
+    </footer>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky",window.scrollY > 0);
+		})
+	</script>
+	<script src="gra.js"></script>
+</body>
+</html>
